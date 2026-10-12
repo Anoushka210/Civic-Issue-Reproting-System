@@ -1,0 +1,67 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies
+node_modules/
+**/node_modules/
+venv/
+.venv/
+**/venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Build output and caches
+dist/
+build/
+coverage/
+.vite/
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Python / ML experimentation
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+mlruns/
+lightning_logs/
+*.h5
+*.keras
+*.onnx
+*.pt
+*.pth
+*.weights
+
+# Runtime uploads and generated data
+uploads/*
+!uploads/.gitkeep
+ml-service/uploads/
+tmp/
+temp/
+
+# Local databases and runtime files
+*.sqlite
+*.sqlite3
+*.db
+*.pid
+
+# Temporary validation scripts
+scratch/
+e2e_validation.mjs
+regression_check.mjs
+clean_test_records.mjs
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
